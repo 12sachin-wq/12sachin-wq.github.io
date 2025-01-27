@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Sachin Chaudhari</title>
+</head>
+<body style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5;">
+    <!-- Navigation Bar -->
+    <nav style="background: linear-gradient(45deg, #2193b0, #6dd5ed); padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="margin: 0; color: white; font-size: 1.8rem;">Sachin Chaudhari</h1>
+            <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 2rem;">
+                <li><a href="/index.html" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;">Home</a></li>
+                <li><a href="/articles.html" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;">Articles</a></li>
+                <li><a href="/about.html" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;">About</a></li>
+                <li><a href="/contact.html" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="max-width: 1200px; margin: 2rem auto; padding: 0 1rem;">
+        <h2 style="color: #2193b0; margin-bottom: 2rem;">Latest Articles</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <!-- Article Cards -->
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <img src="osint_blog_image.png" alt="AI OSINT Article" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 1.5rem;">
+                    <h3 style="color: #2193b0; margin-top: 0;">AI Revolutionizing OSINT Investigations</h3>
+                    <p style="color: #666; line-height: 1.6;">Discover how artificial intelligence is transforming open-source intelligence gathering and analysis with powerful new capabilities.</p>
+                    <a href="javascript:void(0)" onclick="toggleArticle('osint-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Read More</a>
+                    <div id="osint-article" style="display: none; margin-top: 1rem;">
+                        <h4 style="color: #2193b0;">Full Article</h4>
+                        <p style="color: #666; line-height: 1.6;">
+                            Artificial Intelligence is revolutionizing the field of Open Source Intelligence (OSINT) investigations by introducing powerful new capabilities for data collection, analysis, and pattern recognition. This transformation is making OSINT investigations more efficient and effective than ever before.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            AI-powered tools can now automatically scan and analyze vast amounts of publicly available data from social media, news articles, and other online sources. Machine learning algorithms can identify patterns and connections that might be missed by human analysts, while natural language processing helps understand context and sentiment across multiple languages.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            These advancements are particularly valuable in areas such as cybersecurity, threat intelligence, and digital forensics. Investigators can now process and analyze data at unprecedented speeds, leading to faster and more accurate intelligence gathering.
+                        </p>
+                        <a href="javascript:void(0)" onclick="toggleArticle('osint-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Show Less</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <img src="willow.avif" alt="Google Quantum Computer Willow" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 1.5rem;">
+                    <h3 style="color: #2193b0; margin-top: 0;">Google's Quantum Breakthrough: Project Willow</h3>
+                    <p style="color: #666; line-height: 1.6;">Explore Google's latest quantum computing achievement with Willow - a revolutionary quantum processor promising enhanced error correction and scalability.</p>
+                    <a href="javascript:void(0)" onclick="toggleArticle('willow-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Read More</a>
+                    <div id="willow-article" style="display: none; margin-top: 1rem;">
+                        <h4 style="color: #2193b0;">Full Article</h4>
+                        <p style="color: #666; line-height: 1.6;">
+                            Google has announced a major breakthrough in quantum computing with their new processor codenamed "Willow". This revolutionary quantum processor represents a significant leap forward in the field of quantum computing, particularly in addressing two critical challenges: error correction and scalability.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            The Willow processor utilizes a novel architecture that implements advanced error correction protocols, allowing for more stable and reliable quantum computations. This advancement is crucial as quantum systems are inherently sensitive to environmental noise and decoherence.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            In terms of scalability, Willow introduces a modular design that allows for easier expansion of quantum processing capabilities. This approach could potentially pave the way for practical quantum computers that can tackle real-world problems previously thought impossible for classical computers.
+                        </p>
+                        <a href="javascript:void(0)" onclick="toggleArticle('willow-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Show Less</a>
+                    </div>
+                    <script>
+                        function toggleArticle(id) {
+                            var article = document.getElementById(id);
+                            if (article.style.display === "none") {
+                                article.style.display = "block";
+                            } else {
+                                article.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <img src="fully-transparent-solar-panels.png" alt="Transparent Solar Panel" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 1.5rem;">
+                    <h3 style="color: #2193b0; margin-top: 0;">Korean Innovation: Transparent Solar Panels</h3>
+                    <p style="color: #666; line-height: 1.6;">Korean researchers develop groundbreaking transparent solar panels that could transform windows into power generators while maintaining clarity.</p>
+                    <a href="javascript:void(0)" onclick="toggleArticle('solar-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Read More</a>
+                    <div id="solar-article" style="display: none; margin-top: 1rem;">
+                        <h4 style="color: #2193b0;">Full Article</h4>
+                        <p style="color: #666; line-height: 1.6;">
+                            Korean scientists have achieved a remarkable breakthrough in solar technology with the development of highly transparent solar panels. This innovation represents a significant step forward in building-integrated photovoltaics (BIPV), offering the potential to transform ordinary windows into energy-generating surfaces.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            The new technology achieves up to 85% transparency while maintaining reasonable power conversion efficiency. This breakthrough was made possible through the use of novel organic photovoltaic materials and advanced fabrication techniques that allow for near-invisible solar cells.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            These transparent solar panels could revolutionize urban architecture by enabling buildings to generate their own electricity through windows, skylights, and glass facades. The technology shows particular promise for smart cities and green building initiatives, offering a dual benefit of energy generation and natural lighting without compromising aesthetic appeal.
+                        </p>
+                        <a href="javascript:void(0)" onclick="toggleArticle('solar-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Show Less</a>
+                    </div>
+                </div>
+            </div>
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <img src="nvidia-project-digits-exploded-vew-ari.jpeg" alt="NVIDIA's Smallest Supercomputer Chip" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 1.5rem;">
+                    <h3 style="color: #2193b0; margin-top: 0;">NVIDIA's Breakthrough: World's Smallest Supercomputer Chip</h3>
+                    <p style="color: #666; line-height: 1.6;">NVIDIA unveils groundbreaking miniaturized supercomputer chip that packs unprecedented computing power into a tiny form factor.</p>
+                    <a href="javascript:void(0)" onclick="toggleArticle('nvidia-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Read More</a>
+                    <div id="nvidia-article" style="display: none; margin-top: 1rem;">
+                        <h4 style="color: #2193b0;">Full Article</h4>
+                        <p style="color: #666; line-height: 1.6;">
+                            NVIDIA has achieved a remarkable engineering feat with the development of the world's smallest supercomputer chip. This breakthrough innovation combines extreme processing power with unprecedented energy efficiency in a form factor smaller than a credit card.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            The chip utilizes advanced 3nm fabrication technology and incorporates NVIDIA's latest GPU architecture, delivering performance that rivals traditional supercomputer installations while consuming only a fraction of the power. This miniaturization breakthrough enables up to 100 teraflops of computing power - enough to run complex AI models and scientific simulations on edge devices.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            Key applications include autonomous vehicles, portable medical diagnostic devices, and compact AI research stations. The chip's revolutionary design features advanced cooling solutions and optimized power delivery systems, making it ideal for deployment in space-constrained environments where high computational power is essential.
+                        </p>
+                        <a href="javascript:void(0)" onclick="toggleArticle('nvidia-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Show Less</a>
+                    </div>
+                </div>
+            </div>
+            <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <img src="attosecond.jpg" alt="Attosecond Laser" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 1.5rem;">
+                    <h3 style="color: #2193b0; margin-top: 0;">Breaking Time Barriers: Attosecond Laser Technology</h3>
+                    <p style="color: #666; line-height: 1.6;">Scientists achieve unprecedented temporal resolution with attosecond lasers, opening new frontiers in studying electron dynamics and quantum phenomena.</p>
+                    <a href="javascript:void(0)" onclick="toggleArticle('attosecond-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Read More</a>
+                    <div id="attosecond-article" style="display: none; margin-top: 1rem;">
+                        <h4 style="color: #2193b0;">Full Article</h4>
+                        <p style="color: #666; line-height: 1.6;">
+                            In a groundbreaking development, researchers have pushed the boundaries of ultrafast science with attosecond laser technology. An attosecond is one quintillionth (10^-18) of a second - so brief that light itself travels only about the width of an atom during this timespan.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            This revolutionary technology enables scientists to observe and control electron movements in atoms and molecules in real-time. The achievement represents a quantum leap in our ability to study fundamental processes in physics, chemistry, and biology that occur at the electronic level.
+                        </p>
+                        <p style="color: #666; line-height: 1.6;">
+                            Applications of attosecond lasers extend from understanding photosynthesis at the quantum level to developing next-generation electronics and quantum computers. The technology also promises breakthroughs in medical imaging and drug development by allowing researchers to observe molecular interactions with unprecedented temporal resolution.
+                        </p>
+                        <a href="javascript:void(0)" onclick="toggleArticle('attosecond-article')" style="display: inline-block; background: #2193b0; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; margin-top: 1rem;">Show Less</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #2193b0; color: white; padding: 2rem 0; margin-top: 3rem;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <p style="margin: 0;">© 2024 Sachin Chaudhari. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
